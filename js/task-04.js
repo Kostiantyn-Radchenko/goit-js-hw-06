@@ -1,28 +1,13 @@
-// const btnDecrementEl = document.querySelector('[data-action="decrement"]');
-// const btnIncrementEl = document.querySelector('[data-action="increment"]');
-// const counter = document.querySelector("#value");
-// let counterValue = 0;
-// counter.textContent = counterValue;
-
-// btnDecrementEl.addEventListener("click", () => {
-//   counter.textContent = counterValue -= 1;
-// });
-
-// btnIncrementEl.addEventListener("click", () => {
-//   counter.textContent = counterValue += 1;
-// });
-const decrementBtn = document.querySelector('[data-action="decrement"]');
-const incrementBtn = document.querySelector('[data-action="increment"]');
-const value = document.querySelector("#value");
-
+const btnDecrementEl = document.querySelector('[data-action="decrement"]');
+const btnIncrementEl = document.querySelector('[data-action="increment"]');
+const counter = document.querySelector("#value");
 let counterValue = 0;
+counter.textContent = counterValue;
 
-decrementBtn.addEventListener("click", () => {
-  counterValue -= 1;
-  value.textContent = counterValue;
+btnDecrementEl.addEventListener("click", () => {
+  counter.textContent = counterValue -= 1;
 });
 
-incrementBtn.addEventListener("click", () => {
-  counterValue += 1;
-  value.textContent = counterValue;
+btnIncrementEl.addEventListener("click", () => {
+  counter.textContent = counterValue += 1;
 });
